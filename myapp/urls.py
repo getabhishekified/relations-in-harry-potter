@@ -5,7 +5,7 @@ from . import views
 favicon_view = RedirectView.as_view(url='/static/images/favicon.ico', permanent=True)
 
 urlpatterns = [
-    path('/', views.index, name='index'),
-    path('/getanswer', views.getanswer, name='getanswer'),
-    path('/favicon\.ico', favicon_view)
+    path('', views.index, name='index'),
+    path('getanswer', views.getanswer, name='getanswer'),
+    path('favicon\.ico', favicon_view)
 ]
