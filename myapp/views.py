@@ -21,6 +21,6 @@ def getanswer(request):
         answer = nearest_similarity_cosmul(str1, str2, str3)
 
         
-        return HttpResponse("<html><head><title>Relations in Harry Potter</title></head><body><br><br><center><h1>Relations in Harry Potter</h1></center><br><br><center>"+str1+ " is related to "+str2+", as "+answer+" is related to "+str3+"</center></body></html>")
+        return HttpResponse("<html><head><title>Relations in Harry Potter</title><link rel=\"shortcut icon\" href=\"{% static 'images/favicon.ico' %}\" /></head><body><br><br><center><h1>Relations in Harry Potter</h1></center><br><br><center>"+str1+ " is related to "+str2+", as "+answer+" is related to "+str3+"</center></body></html>")
     else:
         return HttpResponse("Something went wrong!")
