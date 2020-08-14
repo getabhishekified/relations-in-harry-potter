@@ -25,6 +25,4 @@ def getanswer(request):
     else:
         return HttpResponse("Something went wrong!")
 
-csrf_exempt
-def groot(request):
-    return HttpResponse("Hello!")
+
