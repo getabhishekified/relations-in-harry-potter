@@ -6,6 +6,11 @@ import sys
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
+
+    # Override default port for `runserver` command
+    from django.core.management.commands.runserver import Command as runserver
+    runserver.default_port = int(os.environ.get("PORT", 5000))
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
