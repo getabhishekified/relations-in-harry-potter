@@ -1,3 +1,3 @@
 # relations-in-harry-potter
 
-Hosted at: https://hogwarts-magic.herokuapp.com/
+Hosted at: https://hogwarts-magic.herokuapp.com
